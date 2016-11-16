@@ -1,7 +1,7 @@
 var current = []
 var minLitness = 100
 $(function() {
-  $(document).on('keyup mouseup', function(evt) {
+  $(document).on('change', function(evt) {
     minLitness = evt.target.value
     blessed()
   })
