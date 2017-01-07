@@ -2,51 +2,65 @@
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
+  color: black;
 }
-.header {
-  padding: 20px 0; 
-  border-bottom: 1px solid #f8f8f8;
-}
-.header .right {
-  float: right;
-}
-.header .logo {
-  width: 60px;
-  display: inline-block;
-}
-.header .logo img {
-  height: auto;
+a {
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.litbody {
-  
+body:hover a {
+  opacity: 0.4; 
 }
-.lititem {
-  border-bottom: 1px solid #d8d8d8;
-  padding: 20px 0;
-  font-size: 18px;
-}
-label {
-  margin-top: 20px;
-  display: block;
-}
-input[type=number] {
-  display: block;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #d8d8d8;
-  border-radius: 10px;
-}
-.button {
-  border: 1px solid #d8d8d8;
-  padding: 10px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-left: 10px;
+body:hover a:hover {
+  opacity: 1;
+  box-shadow: inset 0 -0.33333em rgba(22,22,22,0.0875);
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
 }
-.button:hover {
-  box-shadow: 5px 5px 0px #f8f8f8;
+h3 {
+  clear: both; 
 }
-
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+}
+.logo img {
+  width: 50px;
+}
+.row {
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+}
+.split {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+.split50 {
+  width: 50%;
+}
+.split33 {
+  width: 33.33333%;
+}
+@media (max-width: 500px) {
+  .split {
+    display: block;
+    width: 100% !important;
+  }
+  .row {
+    height: auto;
+  }
+}
